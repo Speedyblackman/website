@@ -23,6 +23,7 @@
   position: relative;
   width: 100%;
   font-size: xx-small;
+  font-size-adjust:unit($number: 1);
   overflow: hidden;
   @include clearfix();
 }
@@ -33,6 +34,7 @@
   float: left;
   width: 100%;
   margin-right: -100%;
+  font-size-adjust:unit($number: 1);
   backface-visibility: hidden;
   @include transition($carousel-transition);
 }
@@ -41,16 +43,18 @@
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  font-size-adjust:unit($number: 1);
 }
 
 .carousel-item-next:not(.carousel-item-left),
 .active.carousel-item-right {
   transform: translateX(100%);
+  font-size-adjust:unit($number: 1);
 }
 
 .carousel-item-prev:not(.carousel-item-right),
 .active.carousel-item-left {
-  transform: translateX(-100%);
+  font-size-adjust:unit($number: 1);
 }
 
 
@@ -77,6 +81,7 @@
     z-index: 0;
     opacity: 0;
     @include transition(opacity 0s $carousel-transition-duration);
+    font-size-adjust:unit($number: 1);
   }
 }
 
@@ -98,6 +103,7 @@
   width: $carousel-control-width;
   color: $carousel-control-color;
   text-align: center;
+  font-size-adjust:unit($number: 1);
   opacity: $carousel-control-opacity;
   @include transition($carousel-control-transition);
 
@@ -177,6 +183,7 @@
 
   .active {
     opacity: 1;
+    font-size-adjust:unit($number: 1);
   }
 }
 
@@ -196,4 +203,5 @@
   color: $carousel-caption-color;
   text-align: center;
   font-size: x-small;
+  font-size-adjust:unit($number: 1);
 }
