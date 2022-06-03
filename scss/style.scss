@@ -24,34 +24,38 @@ $enable-rounded: false;
 /********** Template CSS ************/
 h1,
 .font-weight-black {
-    font-weight: 900;
+    font-size: 1rem;
+    font-weight: 900 !important;
 }
 
 h2,
 .font-weight-bolder {
-    font-size: 4px;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 800 !important;
 }
 
 h3,
 .font-weight-bold {
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 700 !important;
 }
 
 h4,
 .font-weight-semi-bold {
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 600 !important;
 }
 
 h5
 .font-weight-medium {
-    font-size: 4px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 500 !important;
 }
 
 h6,
 .font-weight-normal {
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400 !important;
 }
 
 .back-to-top {
